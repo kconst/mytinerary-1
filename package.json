@@ -1,25 +1,56 @@
 {
-  "name": "my-tinerary",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
-  },
+  "name": "your-first-node-package",
+  "version": "1.0.0",
+  "description": "My very first package",
+  "main": "server.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd client && npm start",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \" npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annaskoulikari/mytinerary.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "Anna Skoulikari",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annaskoulikari/mytinerary/issues"
+  },
+  "homepage": "https://github.com/annaskoulikari/mytinerary#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
+    "gridfs-stream": "^1.1.1",
+    "heroku": "^7.22.0",
+    "https": "^1.0.0",
+    "jsonwebtoken": "^8.4.0",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.1.10",
+    "mongoose": "^5.4.1",
+    "multer": "^1.4.1",
+    "multer-gridfs-storage": "^3.2.3",
+    "passport": "^0.4.0",
+    "passport-facebook-token": "^3.3.0",
+    "passport-google-plus-token": "^2.1.0",
+    "path": "^0.12.7",
+    "react": "^16.7.0",
+    "redux": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9",
+    "redux-devtools-extension": "^2.13.7"
+  },
+  "engines": {
+    "node": "11.10.0"
+  }
 }

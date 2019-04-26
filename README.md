@@ -1,44 +1,54 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## MYtinerary Travel App
 
-## Available Scripts
+This is an app I built while training to become a fullstack developer in a coding bootcamp.
 
-In the project directory, you can run:
+If you want to watch a video app demo of it then click [here](https://www.youtube.com/watch?v=iWesF6zGkWo) :video_camera: !
 
-### `npm start`
+It is a travel app built with the MERN stack along with Redux for state management.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Getting Started
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Include a `.env` file in the `server` directory with the following environmental variables: MONGODB_URI, JWT_SKEY.
 
-### `npm test`
+```# Install dependencies for server
+npm install
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Install dependencies for client
+npm run client-install
 
-### `npm run build`
+# Run the client & server with concurrently
+npm run dev
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Run the Express server only
+npm run server
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+# Run the React client only
+npm run client
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Server runs on http://localhost:5000 and client on http://localhost:3000
+```
 
-### `npm run eject`
+## Built With
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Node.js
+- Express
+- MongoDB
+- Mongoose
+- Bcrypt
+- Jsonwebtoken
+- React
+- Redux
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## More Info
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Author
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+:raising_hand: Anna Skoulikari
 
-## Learn More
+email : :envelope: annaskoulikari@gmail.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Find me on:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [Linkedin](https://www.linkedin.com/in/annaskoulikari/ "Linkedin")
+- [Medium](https://medium.com/anna-skoulikari "Medium")
+- [Youtube](https://www.youtube.com/channel/UCa6kP6qEgN6VL1lraEiybmw "Youtube")
